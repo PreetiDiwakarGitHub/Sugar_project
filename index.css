@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: black;
+}
+.headertext {
+    display: flex;
+    list-style: none;
+    float: right;
+    gap: 10px;
+    color: white;
+    padding-top: 10px;
+    padding-right: 20px;
+}
+.header {
+    background-image: url("./img/back.jpg");
+    height: 40px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-right: 6rem;
+}
+.nevbar {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    color: white;
+}
+input {
+    height: 3rem;
+    width: 35rem;
+    border: 1px solid white;
+    background-color: black;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.searchbutton {
+    height: 3rem;
+    border: white;
+    background-color: white;
+    width: 6rem;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    position: relative;
+    right: 5px;
+}
+.nevbartext {
+    padding-top: 2rem;
+    gap: 20px;
+}
+.navbar2 {
+    display: flex;
+    color: white;
+    list-style: none;
+    gap: 3rem;
+    padding-top: 15px;
+    position: relative;
+    left: 20px;
+}
+.navbartext2 {
+    height: 3rem;
+    background-color: rgb(33, 31, 31);
+    margin-top: 10px;
+}
+.fa-heart {
+    gap: 10px;
+}
+.slider-container {
+    width: 100vw;
+    height: 70vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: black;
+    text-align: center;
+    transition: transform 0.5s ease-in-out;
+}
+.slide img {
+    height: 90%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.btn-container {
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.prevBtn,
+.nextBtn {
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.prevBtn:hover,
+.nextBtn:hover {
+    background-color: darkblue;
+}
