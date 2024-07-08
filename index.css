@@ -113,3 +113,51 @@ input {
     height: 5rem;
     
 }
+.button{
+    height: 15px;
+    width: 15px;
+    border: 1px solid white;
+    border-radius: 50px;
+}
+.point{
+    display: flex;
+
+}
+.slider-container {
+    display: flex;
+    overflow: hidden;
+}
+.slide {
+    min-width: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+.slide-img {
+    width: 100%;
+}
+.btn-container {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.prevBtn, .nextBtn {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+.point {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.button {
+    height: 15px;
+    width: 15px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin: 0 5px;
+}
