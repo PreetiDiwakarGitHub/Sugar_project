@@ -86,29 +86,46 @@ document.addEventListener('DOMContentLoaded', () => {
     const images = bag.getElementsByTagName('img');
     const totalImages = images.length;
     const imagesPerPage = 3;
+    const imageWidth = 320; // Adjust based on your image width
     const totalPages = Math.ceil(totalImages / imagesPerPage);
     let currentIndex = 0;
 
     function updateImageDisplay() {
-        const offset = currentIndex * (320); // 320 is the width of the container (320px)
+        const offset = currentIndex * (imageWidth * imagesPerPage);
         bag.style.transform = `translateX(-${offset}px)`;
     }
 
     document.getElementById('next').addEventListener('click', () => {
-        if (currentIndex < totalPages - 1) {
-            currentIndex++;
-            updateImageDisplay();
+        currentIndex++;
+        if (currentIndex >= totalPages) {
+            currentIndex = 0; // Wrap around to the first set of images
         }
+        updateImageDisplay();
     });
 
     document.getElementById('prev').addEventListener('click', () => {
-        if (currentIndex > 0) {
-            currentIndex--;
-            updateImageDisplay();
+        currentIndex--;
+        if (currentIndex < 0) {
+            currentIndex = totalPages - 1; // Wrap around to the last set of images
         }
+        updateImageDisplay();
     });
 
     // Initialize the display
     updateImageDisplay();
 });
 
+let scroll = document.querySelector(".Lipstick");
+let backbtn = document.getElementById("prev_button");
+let btn = document.getElementById("next_button");
+scroll.addEventListener("wheel",(e)=>{
+    e.preventDefault();
+    scroll.scrollLeft+=e.deltaY;
+});
+btn.addEventListener("click",()=>{
+    scroll.style.scrollBehavior = "smooth";
+    scroll.scrollLeft+=900;
+})
+backbtn.addEventListener("click",()=>{
+    scroll.scrollLeft-=900;
+})

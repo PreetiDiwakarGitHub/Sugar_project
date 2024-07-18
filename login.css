@@ -1,0 +1,101 @@
+ body {
+    background-image: url("./img/sugerimg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.loginpage {
+    display: flex;
+    
+}
+
+.login img {
+    width: 90%;
+    height: 46rem;
+}
+
+.loginnumber{
+    border: none;
+    background-color: transparent;
+    outline: none;
+    
+}
+.feld{
+    
+    width: 15rem;
+    border-radius: 5px;
+}
+.loginText{
+    height: 40rem;
+    width: 40rem;
+    text-align: center;
+    /* border: 2px solid black; */
+    margin-left: 5rem;
+    padding-top: 50px;
+}
+.HiText img{
+    height: 7rem;
+    padding-top:10px ;
+    
+}
+.LoginText2{
+    font-size: 15px;
+}
+.loginTxt3{
+    font-size: 10px;
+    color: rgb(160, 153, 153);
+    padding-top: 30px;
+}
+.phonenumber{
+    padding-left: 10rem;
+    padding-top: 40px;
+}
+.OTP_button{
+    margin-top: 50px;
+    border-radius: 5px;
+    height: 35px;
+    font-size: 11px;
+    width: 6rem;
+    background-color: rgb(198, 194, 194);
+    color: rgb(149, 145, 145);
+    border: none;
+}
+.border{
+    border: 1px rgb(200, 194, 194) dashed;
+    margin-top: 20px;
+}
+.loginSpanText{
+    color:rgb(228, 89, 112);
+}
+.loginText4{
+    font-size: 11px;
+    color: rgb(123, 119, 119);
+
+}
+.loginText5{
+    font-size: 13px;
+    color: rgb(5, 2, 2);
+    margin-top: 50px;
+    margin-left: 30rem;
+    
+}
+.loginText6{
+    font-size: 11px;
+    color: rgb(35, 33, 33);
+    
+}
+.blackborder{
+    height: 1rem;
+    background-color: black;
+    width: 100%;
+    position: relative;
+    bottom: 4px;
+}
+
+
+
+
+
+

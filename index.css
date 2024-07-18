@@ -143,7 +143,7 @@ input {
     border-radius: 50%;
     margin: 0 5px;
 }
-.bag{
+/* .bag{
     display: flex;
     justify-content: space-between;
     background-color: whitesmoke;
@@ -161,7 +161,7 @@ input {
 .bag {
     display: flex;
     transition: transform 0.5s ease-in-out;
-}
+} */
 
 
 
@@ -178,4 +178,49 @@ input {
     text-align: center;
     position: relative;
     left: 50px;
+}
+.bag-box {
+    width: 100%; /* 3 images * 320px each */
+    overflow: hidden;
+    position: relative;
+    background-color: white;
+    padding: 40px;
+}
+.bag {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.bag img {
+    width: 480px; /* Adjust based on your image width */
+    flex-shrink: 0;
+    height: 350px;
+    padding-right: 50px;
+}
+.button {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.Lipstick{
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+}
+.Lipstick img{
+    width: 30rem;
+}
+
+
+/* login page     \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+
+.loginpage{
+    display: flex;
+    height: 10%;
+}
+.loginimg img{
+    width: 40%;
+    height: 50rem;
+}
+.loginimage img{
+    width: 20%;
 }
